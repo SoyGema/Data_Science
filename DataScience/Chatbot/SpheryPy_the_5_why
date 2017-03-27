@@ -1,0 +1,26 @@
+#This is SpheRyPy why´s approach to a problem.The aim of this project
+#is to allow to go deeper into the causes of a problem.
+
+#The data generated in this exercise is
+#Reason_1
+#Reason_2
+#Reason_3
+#Reason_4
+#Reason_5
+
+#-----------------
+#DESCRIPTION OF A PROBLEM
+print("*smiles* Disposition to talk and learn about problems is actually the first move to solve them")
+print("Can you describe your problem in one sentence?")
+Reason_1=input()
+print("Why do you think this" +Reason_1+ " happened?")
+Reason_2=input()
+print("Why do you think this" +Reason_2+ " was for?")
+Reason_3=input()
+print("Why " +Reason_3+ "happened?")
+Reason_4=input()
+print("Why " +Reason_4+ "happened?")
+Reason_5=input()
+print("Why " +Reason_5+ "happened?")   
+Reason_6=input()
+print("Is it logic that" +Reason_6+ "occurs because" +Reason_1+ "?")
