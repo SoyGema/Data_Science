@@ -25,3 +25,38 @@ def increment():
     i += 1
 
 #Interesting : functions might be nested . Just call in the return for the funtion inside the variable
+def func1(a,b):
+    def inner_func(x):
+        return x*x
+    return inner_func(a) + inner_func(b) , inner_func(a)
+
+#we can put inmutable or other data structures when building a function
+def list_grow(x, list=[]):
+    list.append(x)
+    return list
+
+def add_mean(x, *data):
+    return x + sum(data)/float(len(data))
+
+#Arbitrary number of keyword arguments
+#kwargs is a dict of the keyword args passed to the function
+def print_keyword_args(**kwargs):
+    for key, value in kwargs.iteritems():
+        print "%s = %s" % (key, value)
+
+print_keyword_args(first_name="John", last_name="Doe")
+#also used in dictionry
+kwargs = {'first_name': 'Bobby' , 'last_name' : 'Smith'}
+print_keyword_args(x=[1,2,3], y=[3,3,0])
+
+#---------------------METHODS,FUNCTIONS AND ATTRIBUTES RELATED TO FUNCTION OBJECTS--------------------------#
+#METHOD : it is a function wich is a member of a class
+class apple:
+    def my_method(self):
+        print "I am an apple"
+
+apple = apple()
+apple.my_method() #prints "I am an apple"
+
+#RECURSIVE FUNCTIONS
+#Recursion is a common technique in computer science where a function calls itself
