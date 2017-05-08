@@ -60,3 +60,43 @@ apple.my_method() #prints "I am an apple"
 
 #RECURSIVE FUNCTIONS
 #Recursion is a common technique in computer science where a function calls itself
+
+#Here sum_fact is basically inside the function and it operates
+
+def sum_fact(n):
+    if n != 0:
+        return n + sum_fact(n-1)
+    else:
+        return 1
+
+def fibbonacci(n):
+    if n >= 2:
+        else:
+    return 1
+
+def factorial(n):
+    assert n > 0
+    if n != 0:
+        return n * factorial(n-1)
+    else:
+        return 1
+
+#Assigning a function to a variable
+#It is great when you want to refactor
+
+def sq(x): return x*x
+square = sq
+
+
+#Anonymous function : the lambda keyword
+#lambda function are short one-line functions that have no name.
+#They can contain only one statement so for instance the if, for and while are not allowed
+
+#lambda is an expression whereas def is a statement
+product = lambda x,y: x*y
+
+def sum_surf(n):
+    return 3,14 + n
+
+sum_surf2 = lambda n: 3,14 + n
+surf = sum_surf2
