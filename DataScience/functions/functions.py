@@ -58,7 +58,7 @@ class apple:
 apple = apple()
 apple.my_method() #prints "I am an apple"
 
-#RECURSIVE FUNCTIONS
+#---------------------RECURSIVE FUNCTIONS--------------------------------------------------------------
 #Recursion is a common technique in computer science where a function calls itself
 
 #Here sum_fact is basically inside the function and it operates
@@ -88,7 +88,7 @@ def sq(x): return x*x
 square = sq
 
 
-#Anonymous function : the lambda keyword
+#-----------------------ANONYMUS FUNCTION : the lambda keyword------------------------------------------#
 #lambda function are short one-line functions that have no name.
 #They can contain only one statement so for instance the if, for and while are not allowed
 
