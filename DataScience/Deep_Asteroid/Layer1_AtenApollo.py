@@ -9,7 +9,7 @@ import csv
 import numpy 
 import pandas as pd
 
-Ast = pd.read_csv('/home/gparreno/DataScience/Deep_Asteroid/Classification_Aten_Apollo Dataset.csv')
+Ast = pd.read_csv('.../Classification_Aten_Apollo Dataset.csv') #Path
 Ast.head(10)
 
 #TODO : Transform datetime // regular expresion or remove column
