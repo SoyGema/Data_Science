@@ -29,5 +29,13 @@ class MyTestCase(unittest.TestCase):
     def test_should_return_factorial_of_number(self):
         self.assertEqual([0], Loops.fibonacci(0))
 
+        
+        
+#----------------------------------------------#
+class MyTestCase(unittest.TestCase):
+    def test_should_return_factorial_of_number(self):
+        self.assertEqual(True, Loops.palindrome('amor a roma'))
+        
+        
 if __name__ == '__main__':
     unittest.main()
