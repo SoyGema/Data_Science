@@ -36,3 +36,13 @@ df['column_1'].nunique()
 
 row_value_selected = ['value_1', 'value_2', 'value_3']
 dataset_columns = df.loc[df['column_1'].isin(row_value_selected)]
+
+#Select a value from a row in a column and show as type 
+
+df['column_1']=(df['column_1']=='value').astype(int)
+
+
+
+
+
+
