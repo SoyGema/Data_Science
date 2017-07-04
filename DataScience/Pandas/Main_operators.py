@@ -49,6 +49,7 @@ df['column_1']=(df['column_1']=='value').astype(int)
 
 list_name = df['column_1'].values.tolist()
 
+#Create a new dataset joining different datasets 
 
-
+dataset_new = pd.concat([ dataset_1, dataset_2, dataset_3, dataset_4, dataset_n], axis=1)
 
