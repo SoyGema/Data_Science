@@ -27,6 +27,10 @@ total_column_sum = df['column_1'].sum()
 
 total_column_mean = df['column_1'].mean()
 
+#Max of the elements of a column
+
+total_column_mean = df['column_1'].max()
+
 #Count of unique elements in a column
 
 df['column_1'].nunique()
@@ -41,7 +45,9 @@ dataset_columns = df.loc[df['column_1'].isin(row_value_selected)]
 
 df['column_1']=(df['column_1']=='value').astype(int)
 
+#Convert a dataframe column into a list 
 
+list_name = df['column_1'].values.tolist()
 
 
 
