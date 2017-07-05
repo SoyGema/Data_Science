@@ -23,6 +23,10 @@ df['column_1']=df['column_1'].astype(int)
 
 total_column_sum = df['column_1'].sum()
 
+#Count the number of categories inside a column of a dataset 
+
+df['column'].value_counts()
+
 #Mean of the elements of a column
 
 total_column_mean = df['column_1'].mean()
@@ -52,4 +56,14 @@ list_name = df['column_1'].values.tolist()
 #Create a new dataset joining different datasets 
 
 dataset_new = pd.concat([ dataset_1, dataset_2, dataset_3, dataset_4, dataset_n], axis=1)
+
+#Delete a column from a dataset
+
+dataset.drop('column_name', axis = 1, inplace= True)
+
+#Operate a column of a dataset_1 and create a new column in another dataset_2
+
+dataset2['new_name'] = dataset1['numerical_column'] - np.array([2])
+
+
 
