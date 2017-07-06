@@ -10,6 +10,10 @@ import time
 
 df['time_column']=df['time_column'].apply(lambda x: datetime.strptime(x,'%b-%Y'))
 
+#Order the dataset by dates
+
+df.sort_values(by = 'date_column')
+
 #Group the data taking two columns and count it 
 
 status_data = df.groupby(['column_1'])['column_2'].count()
@@ -52,6 +56,10 @@ df['column_1']=(df['column_1']=='value').astype(int)
 #Convert a dataframe column into a list 
 
 list_name = df['column_1'].values.tolist()
+
+#Convert a list into a dataframe
+
+dataset_new = pd.DataFrame(np.array(list_name).reshape(len(list_name), 1))
 
 #Create a new dataset joining different datasets 
 
