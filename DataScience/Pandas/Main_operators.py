@@ -59,19 +59,27 @@ list_name = df['column_1'].values.tolist()
 
 #Convert a list into a dataframe
 
-dataset_new = pd.DataFrame(np.array(list_name).reshape(len(list_name), 1))
+df_new = pd.DataFrame(np.array(list_name).reshape(len(list_name), 1))
 
 #Create a new dataset joining different datasets 
 
-dataset_new = pd.concat([ dataset_1, dataset_2, dataset_3, dataset_4, dataset_n], axis=1)
+df_new = pd.concat([ df_1, df_2, df_3, df_4, df_n], axis=1)
 
 #Delete a column from a dataset
 
-dataset.drop('column_name', axis = 1, inplace= True)
+df.drop('column_name', axis = 1, inplace= True)
 
 #Operate a column of a dataset_1 and create a new column in another dataset_2
 
-dataset2['new_name'] = dataset1['numerical_column'] - np.array([2])
+df_2['new_name'] = df_1['numerical_column'] - np.array([2])
+
+#Rename header
+
+df.columns.values[1] = "new_name"
+
+#Pandas to csv -out.csv file will be 
+
+df.to_csv('out.csv')
 
 
 
