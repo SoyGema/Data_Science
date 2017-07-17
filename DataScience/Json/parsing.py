@@ -33,3 +33,7 @@ with open(filename, 'r') as f:
 
 #See how it is going on
 data[0]
+
+#Convert it into Pandas
+import pandas as pd
+stops = pd.DataFrame(data, columns=good_columns)
