@@ -21,3 +21,7 @@ text.replace('apple', 'pear', 1)
 text.translate(None, 'aeiou')
 #separate a string with respect to a single separator
 text.partition('wonderful')
+#Break a large string down into smaller strings
+text3 = text.split("")
+#Removes all whitespace at the start and the end, including spaces, tabs, newlines and carriage returns
+text3 = text.strip()
