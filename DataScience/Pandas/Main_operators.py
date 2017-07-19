@@ -85,5 +85,9 @@ df.columns.values[1] = "new_name"
 
 df.to_csv('out.csv')
 
+#Convert categorical features into numerical digits in an array 
+
+array = pd.factorize(df['column_name'])[0]
+
 
 
