@@ -6,6 +6,10 @@ import time
 #df ---> dataframe
 #'time_column' ---> column that have dates 
 
+#Open .csv file and transform it into pandas 
+
+pd.read_csv('.csv')
+
 #Transform dates into readable formats
 
 df['time_column']=df['time_column'].apply(lambda x: datetime.strptime(x,'%b-%Y'))
