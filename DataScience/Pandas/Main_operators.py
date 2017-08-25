@@ -6,9 +6,13 @@ import time
 #df ---> dataframe
 #'time_column' ---> column that have dates 
 
-#Open .csv file and transform it into pandas 
+#Open .csv file and transform it into pandas readable format
 
 pd.read_csv('.csv')
+
+#Open .json file and transform it into pandas readable format 
+
+pd.read_json('.json')
 
 #Transform dates into readable formats
 
