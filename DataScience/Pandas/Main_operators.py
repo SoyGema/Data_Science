@@ -14,6 +14,10 @@ pd.read_csv('.csv')
 
 pd.read_json('.json')
 
+#Describe mean, min-max and relevant %s
+
+df.describe()
+
 #Transform dates into readable formats
 
 df['time_column']=df['time_column'].apply(lambda x: datetime.strptime(x,'%b-%Y'))
