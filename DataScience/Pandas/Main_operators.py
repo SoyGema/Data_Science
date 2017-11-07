@@ -114,7 +114,10 @@ array = pd.factorize(df['column_name'])[0]
 column = df['column_name']
 column.isnull().sum()
 
+#Correlation identification
 
+df.rank()
+df.corr('column_name')
 
 
 
