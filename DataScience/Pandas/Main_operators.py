@@ -14,6 +14,10 @@ pd.read_csv('.csv')
 
 pd.read_json('.json')
 
+#General info
+
+df.info()
+
 #Describe mean, min-max and relevant %s
 
 df.describe()
@@ -50,6 +54,14 @@ total_column_mean = df['column_1'].mean()
 #Max of the elements of a column
 
 total_column_mean = df['column_1'].max()
+
+#Min date
+
+min(df['date_colum'])
+
+#Max date
+
+max(df['date_column'])
 
 #Count of unique elements in a column
 
@@ -96,6 +108,16 @@ df.to_csv('out.csv')
 #Convert categorical features into numerical digits in an array 
 
 array = pd.factorize(df['column_name'])[0]
+
+# Null count in a given column
+
+column = df['column_name']
+column.isnull().sum()
+
+
+
+
+
 
 
 
