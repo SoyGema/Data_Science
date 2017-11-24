@@ -1,3 +1,10 @@
-#Pandas
-Data structure transformations with Pandas 
-Including main module calling and data access and transformation
+## Pandas
+
+Data structure transformation operations with Pandas 
+Including main module calling , data access and transformation among others
+
+It can be used in :
+
+* Data exploration
+
+* Data analysis
