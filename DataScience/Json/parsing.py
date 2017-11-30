@@ -10,6 +10,18 @@ with open(filename, 'r') as f:
     columns = list(objects)
 print(columns[0])
 
+#Read file , replace /n , return as a pandas dataframe 
+
+def read_json():
+    data2 = []
+    with open ('../../../datasets/marketing-join1-2017-11-13T16:07:11.000Z-winterfall.json', 'r') as f:
+        for line in f.readlines():
+            if line != '\n':
+                data2.append(str(line).replace("\n",'').split(','))
+            
+        return pd.DataFrame(data2)
+
+
 #Get the column names
 column_names = [col["fieldName"] for col in columns]
 column_names
