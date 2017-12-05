@@ -30,3 +30,20 @@ ax.spines["top"].set_visible(False)
 ax.spines["bottom"].set_visible(False)
 ax.spines["right"].set_visible(False)
 ax.spines["left"].set_visible(False)
+
+
+# Ensure that the axis ticks only show up on the bottom and left of the plot
+ax.get_xaxis().tick_bottom()
+ax.get_yaxis().tick_left()
+
+#Limit the range of the plot to only where the data is
+# Avoid unnecessary whitespace
+plt.ylim(0, 90) #-----> %
+plt.xlim(1968, 2014) #------> dates
+
+# Make sure your axis ticks are large enough to be asily read
+plt.yticks(range(0,91,10), [str(x) + "%" for x in range(0, 91, 10)], fontsize=14)
+plt.xticks(fontsize=14)
+
+# Provide tick lines across the plot to help your viewers 
+
