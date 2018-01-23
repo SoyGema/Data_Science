@@ -1,9 +1,23 @@
 
 ## Exploration of dataset in PySpark 
 
+##Inspect SparkContext ( important for configuration )
+sc.version 
+sc.master
+sc.appName
+sc.applicationId
+sc.defaultParallelism
+sc.defaultMinPartitions
+
+#Configuration for local (changeable)
+conf = (SparkConf()
+        .setMaster("local")
+        .setAppName("My app")
+        .set("spark.executor.memory", "lg")
+
 #Create a SparkContext and a sqlContext 
 from pyspark.sql import SparkContext,SQLContext
-sc = SparkContext()
+sc = SparkContext(conf = conf)
 sqlContext = SQLContext(sc)
 
 #Use Spark-csv pakage and extract it into the home directory of Spark 
