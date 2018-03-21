@@ -11,5 +11,12 @@ plt.show()
 # In seaborn
 import seaborn as sns 
 sns.set(style="ticks")
-
 sns.pairplot(dataset, hue="data")
+
+# Or 
+fig, ax = plt.subplots(figsize=(15,12))
+
+corr = dataset.corr()
+sns.heatmap(corr,
+            xticklabels=corr.columns.values,
+            yticklabels=corr.columns.values, ax=ax)
