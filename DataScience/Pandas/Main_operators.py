@@ -119,8 +119,7 @@ column.isnull().sum()
 df.rank()
 df.corr('column_name')
 
+#Concatenate two dataframes df1 and df2 having equal number of rows 
 
-
-
-
+pd.concat([df1,df2], axis=1)
 
